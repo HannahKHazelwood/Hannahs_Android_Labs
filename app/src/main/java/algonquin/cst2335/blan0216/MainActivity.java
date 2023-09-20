@@ -25,13 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
         myText.setText(String.format("Your edit text has: %s", editString));
 
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                editString = myEdit.getText().toString();
-                myText.setText(String.format("Your edit text has: %s", editString));
-            }
-        });
+        if(myButton != null){
+            myButton.setOnClickListener((View view) -> {myText.setText(String.format("Your edit text has: %s", editString));;});
+        }
     }
 
 }
