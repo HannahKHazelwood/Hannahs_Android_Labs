@@ -8,22 +8,47 @@
 
     <TextView
         android:id="@+id/textview"
-        android:layout_width="123dp"
-        android:layout_height="48dp"
+        android:layout_width="275dp"
+        android:layout_height="85dp"
         android:text="@string/hello_message"></TextView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="273dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="50dp"
         android:text="@string/button_message"></Button>
 
     <EditText
         android:id="@+id/edittext"
-        android:layout_width="133dp"
+        android:layout_width="275dp"
         android:layout_height="wrap_content">
 
     </EditText>
+
+    <LinearLayout
+        android:id="@+id/innerlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/coffee" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:text="@string/coffee" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/coffee" />
+    </LinearLayout>
 
 </LinearLayout>

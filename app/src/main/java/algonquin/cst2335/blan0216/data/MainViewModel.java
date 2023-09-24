@@ -7,7 +7,8 @@ import androidx.lifecycle.ViewModel;
 import algonquin.cst2335.blan0216.ui.MainActivity;
 
 public class MainViewModel extends ViewModel {
-    private MutableLiveData<String> editString;
+    public MutableLiveData<String> editString;
+    public MutableLiveData<Boolean> checkBool;
 
     public MainViewModel(){
         this.editString = new MutableLiveData<String>("");
@@ -19,18 +20,6 @@ public class MainViewModel extends ViewModel {
 
     public void setEditString(String editString){
         this.editString.postValue(editString);
-    }
-
-    public void observe(MainActivity owner){
-
-        this.editString.observe(owner, new Observer<String>(){
-
-            @Override
-            public void onChanged(String s) {
-
-            }
-        });
-
     }
 
 }
